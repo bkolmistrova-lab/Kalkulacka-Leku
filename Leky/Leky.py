@@ -76,7 +76,7 @@ st.markdown("---")
 # Ibuprofen: 10 mg/kg | Paracetamol: 15 mg/kg (standardní bezpečné dávky)
 if latka.startswith("Ibuprofen"):
     davka_mg_na_kg = 10
-    odstup = "6 až 8 hodin (max 3-4x denně)"
+    odstup = "8 hodin (max 3x denně)"
 else:
     davka_mg_na_kg = 15
     odstup = "6 hodin (v případě potřeby po 4h, max 4x denně)"
