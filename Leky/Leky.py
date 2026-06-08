@@ -32,15 +32,17 @@ latka = st.selectbox(
     ["Ibuprofen (např. Nurofen, Ibalgin, Brufen)", "Paracetamol (např. Paralen, Panadol)"]
 )
 
-# Zobrazení obrázků (používá vaše soubory)
+# Dynamické zobrazení uložených obrázků na základě výběru
 if latka.startswith("Ibuprofen"):
     try:
-        st.image("ibuprofen.png", caption="Ibuprofenové přípravky", width=200)
+        # PŘIDÁNO "Leky/" před název
+        st.image("Leky/ibuprofen.png", caption="Ibuprofenové přípravky", width=200)
     except:
         st.info("ℹ️ Zde se zobrazí obrázek ibuprofen.png")
 else:
     try:
-        st.image("paracetamol.png", caption="Paracetamolové přípravky", width=200)
+        # PŘIDÁNO "Leky/" před název
+        st.image("Leky/paracetamol.png", caption="Paracetamolové přípravky", width=200)
     except:
         st.info("ℹ️ Zde se zobrazí obrázek paracetamol.png")
 
