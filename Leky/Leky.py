@@ -55,14 +55,14 @@ if latka.startswith("Ibuprofen"):
     davka_mg_na_kg = 10
     odstup = "6 až 8 hodin (max 3-4x denně)"
     # Výchozí hodnoty pro Nurofen (20mg v 1ml -> 100mg / 5ml)
-    default_mg = 100
-    default_ml = 5
+    default_mg = 20
+    default_ml = 1
 else:
     davka_mg_na_kg = 15
     odstup = "6 hodin (v případě potřeby po 4h, max 4x denně)"
     # Výchozí hodnoty pro Paracetamol sirup (24mg v 1ml -> 120mg / 5ml)
-    default_mg = 120
-    default_ml = 5
+    default_mg = 24
+    default_ml = 1
 
 potrebne_mg = vaha * davka_mg_na_kg
 
